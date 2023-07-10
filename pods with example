@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mytestapp-pod
+  labels:
+      app: mytestapp
+      type: front-end
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      
+      
+      
+ Now run the below command.
+ #kubectl create -f Pod-definition.yml
+ If you want to modify in your definition file and then you want to run again. Use below command.
+ #kubectl apply -f Pod-definition.yml
+ You can use kubectl edit command also.
+ #kubectl edit pod <pod name>
