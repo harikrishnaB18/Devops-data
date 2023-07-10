@@ -18,3 +18,7 @@ spec:
  #kubectl apply -f Pod-definition.yml
  You can use kubectl edit command also.
  #kubectl edit pod <pod name>
+ you can delete the pod
+ #kubectl delete pods <pod name>
+ you can delete the pods at a time 
+ #kubectl delete pods <pod names eg:1 2 3>
