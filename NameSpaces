@@ -1,0 +1,18 @@
+k8s starts with four initial namespaces
+1.Default
+2.kube-node-release
+3.kube-public
+4.kube-system
+To check the namespaces
+#kubectl get namespaces (ns) shortcut
+To create a namespaces
+#kubectl create ns <namespace name> eg: development
+To switch the namespaces
+#kubectl config set-context --current --namespace=development
+#kubectl config set-context --current --namespace=default
+To list all the pods ,nodes,namespace,labels
+#kubectl get all -A
+To delete the namespace
+#kubectl delete ns <ns name>  eg:development
+To delet the pods
+#kubectl delete pods <names of all pods>
