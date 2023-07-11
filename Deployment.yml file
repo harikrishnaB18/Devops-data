@@ -25,23 +25,31 @@ spec:
 
 create a deployment yml file
 #kubectl create -f <file name>
+
 To connect a pod
 #kubectl exec -it nginx-deployment - <id of pod> --bash and exit
+
 To check the deployments
 #kubectl get deployments
+
 To check the rollout of status
 #kubectl rollout status deployment/<name of deployment>
 #kubectl get rs
+
 To rollout the replicasets
 #kubectl rollout undo deployment/<name of deployment>
+
 To check the history of deployment
 #kubectl rollout history deployment/<name of deployment>
 #kubectl rollout history deployment/<name of deployment> --revision=1
+
 To check the labels
 #kubectl get pods --show-labels
+
 scaling s deployments
 #kubectl scale deployment/<name of deployment> --replicas=10
 #kubectl get deployments
+
 To pause and Resume the deployments
 #kubectl rollout pause deployment/<name of deployment>
 #kubectl rollout resume deployment/<name of deployment>
